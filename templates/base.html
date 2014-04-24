@@ -3,12 +3,20 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <link rel="shortcut icon" href="{{ SITEURL }}/images/favicon.ico">
     <title>{% block title %} {{SITENAME}} {% endblock %}</title>
-
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans Pro:200italic,200,300italic,300,400italic,400,600italic,600,700italic,700,900italic,900" type="text/css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" type="text/css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.css" type="text/css"/>
+    {% if article %}
+    	{% if article.styles %}
+        	{% for style in article.styles %}
+			{{ style }}
+        	{% endfor %}
+    	{% endif %}
+	{% endif %}  
+
   </head>
   <body>
     <div class=container>
@@ -27,5 +35,12 @@
     {% include 'googleanalytics.html' %}
     {% include 'piwik.html' %}
   </body>
+	{% if article %}
+    		{% if article.scripts %}
+        		{% for script in article.scripts %}
+				{{ script }}
+        		{% endfor %}
+    		{% endif %}
+	{% endif %}
 </html>
 
