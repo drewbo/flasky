@@ -17,10 +17,8 @@ a.footnote-reference {font-size: .75em; vertical-align: top;}
 
 
 /* headlines */
-h1, h2, h3, h4, h5, h6      { font-family:'Source Sans Pro',sans-serif;
-                              font-weight: normal; color: #222;  }
 h1 a, h2 a, h3 a, h4 a,
-h5 a, h6 a                  { text-decoration: none; }
+h5 a, h6 a                  { text-decoration: underline; }
 h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #6582BD;}
 h1.title, h2.title          { max-width: 560px; }
@@ -46,14 +44,13 @@ div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
 div.navigation ul           { margin: 0; padding: 0; list-style: none; }
 div.navigation ul li        { display: inline; margin: 0 2px; padding: 0;}
 div.body                    { clear: both; font-size: 1.1em;}
-div.footer                  { border-top: 1px dotted #ddd; padding-top: 9px;
-                              margin-top: 42px; font-size: 16px; color: #ffff66;
+div.footer                  { margin-top: 42px; font-size: 16px; color: #ffff66;
                               text-align: center; }
 div.footer a                { color: #ffff66; }
 div.footer p                { margin: 0; }
 
 div.social                  { padding-top: 20px; padding-bottom: 10px;}
-div.social a                { color: #ffff66; text-decoration: none;}
+div.social a                { color: #0d4d80; text-decoration: none;}
 div.social ul               { margin: 0; padding: 0; list-style: none; }
 div.social ul li            { display: inline; margin: 0 2px; padding: 0; }
 
