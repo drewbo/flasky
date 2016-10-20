@@ -18,7 +18,7 @@ a.footnote-reference {font-size: .75em; vertical-align: top;}
 
 /* headlines */
 h1 a, h2 a, h3 a, h4 a,
-h5 a, h6 a                  { text-decoration: underline; }
+h5 a, h6 a                  { text-decoration: none; }
 h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #6582BD;}
 h1.title, h2.title          { max-width: 560px; }
@@ -179,4 +179,8 @@ img.align-center {
   -moz-border-radius-topright: 10px !important;
   -webkit-border-top-right-radius: 10px !important;
   font-size: 0.85em !important;
+}
+
+.read-more {
+  font-size: 18px;
 }
