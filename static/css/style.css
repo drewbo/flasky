@@ -21,7 +21,7 @@ h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; }
 h1 a:hover, h2 a:hover,
 h3 a:hover, h4 a:hover      { color: #6582BD;}
-h1.title, h2.title          { max-width: 560px; }
+h1.title, h2.title          { max-width: 560px; color: #0d4d80; }
 h1, h2                      { margin: 10px 0 25px 0; }
 h1                          { font-size: 48px; line-height: 52px; }
 h2                          { font-size: 36px; line-height: 40px; }
@@ -61,7 +61,7 @@ dt                              { margin: 25px 0 16px 0; padding: 0; }
 dd                              { margin: 16px 0 25px 40px; padding: 0; }
 ul ol, ol ul, ul ul, ol ol      { margin: 10px 0; padding: 0 0 0 40px; }
 li                              { padding: 0; }
-h1 + p.date                     { margin-top: -20px; font-style: italic; }
+h1 + p.date                     { margin-top: -20px; font-style: italic; color: #ffff66; }
 
 /* code formatting.  no monospace because of webkit (bug?) */
 pre, code, tt   { font-family: 'Consolas', 'Deja Vu Sans Mono',
@@ -98,15 +98,12 @@ table.footnote td p + p { margin-top: 15px; }
 
 /* blog overview */
 div.entry-overview                  { margin: 25px 25px 25px 0px; }
-div.entry-overview h1,
-div.entry-overview div.summary,
-div.entry-overview div.summary p    { display: inline; line-height: 25px; }
 div.entry-overview h1               { margin: 0; font-size: 28px; }
 div.entry-overview div.summary,
 div.entry-overview div.date,
 div.entry-overview div.summary p    { margin: 0; padding: 0; }
-div.entry-overview div.detail       { margin-left: 140px; }
-div.entry-overview div.date         { float: left; width: 120px; color: #ffff66; text-align: right; font-style: italic;}
+div.entry-overview div.detail       { margin-left: 150px; }
+div.entry-overview div.date         { padding-top: 10px; float: left; width: 130px; color: #ffff66; text-align: right; font-style: italic;}
 
 
 /*div.entry-overview h1:after         { content: " —"; }*/
