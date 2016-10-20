@@ -10,7 +10,7 @@
       <div class=date>{{ article.date.strftime('%b %d, %Y') }}</div>
       <div class=detail>
           <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-          <p><div class=summary> {{ article.summary }}</div></p>
+          <div class=summary> {{ article.summary }}</div>
           <br />
           <a class="read-more" href="{{ SITEURL }}/{{ article.url }}">Read more</a>
       </div>
